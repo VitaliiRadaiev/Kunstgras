@@ -1,0 +1,80 @@
+.articles {
+    background: linear-gradient(180deg, #ffffff 11.1%, rgba(255, 255, 255, 0) 27.27%), #f9f9f9;
+    padding: 70px 0 55px;
+
+    @media (max-width: $md3+px) {
+        padding: 50px 0 55px;
+    }
+
+    &__title {
+    }
+
+    &__list {
+        @media (min-width: 992px) {
+            margin-left: -22.5px;
+            margin-right: -22.5px;
+        }
+
+        & > li {
+            margin-bottom: 30px;
+
+            @media (min-width: 992px) {
+                margin-bottom: 45px;
+                padding-left: 22.5px;
+                padding-right: 22.5px;
+            }
+
+            @media (max-width: $md3+px) {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.article-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+    color: $textColor;
+
+    &__img {
+        height: 270px;
+    }
+
+    &__text-wrap {
+        padding: 26px 30px 37px;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: $md4+px) {
+            padding: 20px;
+        }
+
+        & .link {
+            margin-top: auto;
+            align-self: flex-start;
+        }
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 120% ;
+        letter-spacing: -0.04em;
+        margin-bottom: 13px;
+    }
+
+    &__text {
+        margin-bottom: 36px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

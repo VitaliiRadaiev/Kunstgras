@@ -1,0 +1,31 @@
+.products {
+    padding: 66px 0 80px;
+    background: #F9F9F9;
+    @media (max-width: $md3+px) {
+        padding: 50px 0;
+    }
+
+
+    &__title {
+    }
+
+    &__list {
+        margin-bottom: 25px;
+        @media (min-width: 992px) {
+            margin-left: -22.5px;
+            margin-right: -22.5px;
+        }
+        & > li {
+            margin-bottom: 30px;
+
+            @media (min-width: 992px) {
+                margin-bottom: 45px;
+                padding-left: 22.5px;
+                padding-right: 22.5px;
+            }
+        }
+    }
+
+    &__bottom {
+    }
+}

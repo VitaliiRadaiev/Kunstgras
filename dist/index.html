@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kunstgras</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		body.is-load ._preload-body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		body.is-load ._preload-body:before {
+			display: none;
+		}
+
+		._preload-body {
+			background-color: #fff;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 999;
+			transition: all .6s ease .2s;
+		}
+
+		._preload-body:before {
+			position: absolute;
+			content: '';
+			z-index: 999;
+			top: 50%;
+			left: 50%;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			border: 4px solid #6e6e6e;
+			border-right: 4px solid #fff;
+			transform: translate(-50%, -50%);
+			animation: preloadBody 2s linear infinite;
+		}
+
+		@keyframes preloadBody {
+			from {
+				transform: translate(-50%, -50%) rotate(0);
+			}
+
+			to {
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+	</style>
+	
+<script src="js/vendors.js"></script>
+<script src="js/app.js"></script>
+<!-- <script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&callback=initMap&libraries=&v=weekly"
+defer
+></script> -->
+</head>
+
+<body>
+	<div class="_preload-body"></div>
+	<!-- == TOP LINE ================== -->
+	<header class="header">
+    <div class="header__row-1">
+        <div class="container">
+            <p>Wilt u advies of telefonisch bestellen? U kunt ons bereiken op <a href="tel:0383855424">038 - 385 54 24</a></p>
+            <p><a href="#">Klantenservice</a></p>
+        </div>
+    </div>
+    <div class="header__row-2">
+        <div class="container">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="img/logo/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="header__search" data-da="menu__scroll-wrap,first,991.98">
+                <form class="default-field">
+                    <input type="text" class="input" placeholder="Doorzoek de hele winkel">
+                    <button class="btn-default">Zoek</button>
+                </form>
+            </div>
+            <div class="header__rating">
+                <div class="rating">
+                    <div class="rating__stars" data-value="4.6">
+                        <span class="rating__progress"></span>
+                        <div class="rating__star">
+                            <img src="img/icons/star.svg" alt="">
+                        </div>
+                        <div class="rating__star">
+                            <img src="img/icons/star.svg" alt="">
+                        </div>
+                        <div class="rating__star">
+                            <img src="img/icons/star.svg" alt="">
+                        </div>
+                        <div class="rating__star">
+                            <img src="img/icons/star.svg" alt="">
+                        </div>
+                        <div class="rating__star">
+                            <img src="img/icons/star.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="rating__value">
+                        4.6 (548 Reviews)
+                    </div>
+                </div>
+            </div>
+            <div class="header__basket">
+                <a href="#" class="header__basket-icon">
+                    <span>2</span>
+                    <img src="img/icons/basket.svg" alt="">
+                </a>
+                <div class="header__basket-value">
+                    €3450.20
+                </div>
+            </div>
+            <div class="header__burger">
+                <img src="img/icons/burger.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="header__row-3">
+        <div class="container">
+            <div class="menu">
+                <div class="menu__head">
+                    <div class="menu__logo">
+                        <a href="#">
+                            <img class="img-svg" src="img/logo/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="menu__close">
+                        <img src="img/icons/close.svg" alt="">
+                    </div>
+                </div>
+                <div class="menu__scroll-wrap">
+                    <ul class="menu__list">
+                        <li>
+                            <a href="#" class="menu__link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#" class="menu__link">
+                                Soorten Kunstgras
+                            </a>
+                            <div class="sub-menu">
+                                <div class="sub-menu__body">
+                                    <div class="sub-menu__col-1">
+                                        <ul data-id="tab-1" class="sub-menu__sub-categories active">
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-1.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Tuin
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-2.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Balkon
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-3.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Sporten
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-4.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Spelen
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul data-id="tab-2" class="sub-menu__sub-categories">
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-1.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Tuin
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-2.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Balkon
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-3.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Sporten
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-4.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Spelen
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-3.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Sporten
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-4.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Spelen
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul data-id="tab-3" class="sub-menu__sub-categories">
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-4.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Spelen
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-3.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Sporten
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-4.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Spelen
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul data-id="tab-4" class="sub-menu__sub-categories">
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-3.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Sporten
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-4.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Spelen
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-3.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Sporten
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-4.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Spelen
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub-menu__col-2">
+                                        <div class="sub-menu__title">Andere categorieen</div>
+                                        <ul class="sub-menu__categories">
+                                            <li>
+                                                <a data-id="tab-1" href="#"
+                                                    class="sub-menu__categories-link with-chevron active">
+                                                    Gekleurd kunstgras
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a data-id="tab-2" href="#"
+                                                    class="sub-menu__categories-link with-chevron">
+                                                    Accessoires
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a data-id="tab-3" href="#"
+                                                    class="sub-menu__categories-link with-chevron">
+                                                    Bedrijven
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a data-id="tab-4" href="#"
+                                                    class="sub-menu__categories-link with-chevron">
+                                                    Bekijk alle categorieën
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#" class="menu__link">Sport</a>
+                            <div class="sub-menu">
+                                <div class="sub-menu__body">
+                                    <div class="sub-menu__col-1">
+                                        <ul data-id="tab-1" class="sub-menu__sub-categories active">
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-1.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Tuin
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-2.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Balkon
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-3.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Sporten
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-4.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Spelen
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul data-id="tab-2" class="sub-menu__sub-categories">
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-1.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Tuin
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-2.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Balkon
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-3.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Sporten
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-4.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Spelen
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-3.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Sporten
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-4.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Spelen
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul data-id="tab-3" class="sub-menu__sub-categories">
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-4.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Spelen
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-3.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Sporten
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-4.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Spelen
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul data-id="tab-4" class="sub-menu__sub-categories">
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-3.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Sporten
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-4.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Spelen
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-3.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Sporten
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="sub-category-card">
+                                                    <div class="sub-category-card__img ibg">
+                                                        <img src="img/photo/sub-catagory-img-4.jpg" alt="">
+                                                    </div>
+                                                    <div class="sub-category-card__title with-chevron">
+                                                        Spelen
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub-menu__col-2">
+                                        <div class="sub-menu__title">Andere categorieen</div>
+                                        <ul class="sub-menu__categories">
+                                            <li>
+                                                <a data-id="tab-1" href="#"
+                                                    class="sub-menu__categories-link with-chevron active">
+                                                    Gekleurd kunstgras
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a data-id="tab-2" href="#"
+                                                    class="sub-menu__categories-link with-chevron">
+                                                    Accessoires
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a data-id="tab-3" href="#"
+                                                    class="sub-menu__categories-link with-chevron">
+                                                    Bedrijven
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a data-id="tab-4" href="#"
+                                                    class="sub-menu__categories-link with-chevron">
+                                                    Bekijk alle categorieën
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#" class="menu__link">Zakelijk</a>
+                            <div class="sub-menu">
+                                <ul class="sub-menu__list">
+                                    <li>
+                                        <a href="#" class="menu__link">
+                                            Inkoop
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu__link">
+                                            Informatie
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu__link">
+                                            Voorwaarden
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu__link">
+                                            Menu item
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">
+                                Accessories
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">
+                                Outlet
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">
+                                Keuzehulp
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="menu__phone" href="tel:0383855424">038 - 385 54 24</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+	<!-- == // TOP LINE ================== -->
+
+	<main class="_page home-page _padding-top">
+		<section class="promo-header">
+			<div class="promo-header__row-1">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-lg-6 pe-lg-4">
+							<h1 class="promo-header__title title-1">
+								Het Kunstgras kortingsjaar
+							</h1>
+							<div class="promo-header__sub-title">
+								Gras rechtstreeks uit eigen fabriek, tegen groothandelsprijzen.
+							</div>
+							<a href="#" class="btn-default">Bekijk de actieproducten</a>
+						</div>
+						<div class="col-12 col-lg-6 ps-lg-4">
+							<a href="#" class="product-card">
+								<div class="product-card__img">
+									<div class="product-card__label-group">
+										<div class="product-card__label label" style="background-color: #EBB11E;">Actie
+											- 21%</div>
+									</div>
+									<img src="img/photo/product-big-img-1.png" alt="">
+								</div>
+								<div class="product-card__title title-3">Ocean New</div>
+								<div class="product-card__status">
+									<span style="background-color: #72AF3A;"></span>
+									Direct leverbaar
+								</div>
+								<div class="product-card__bottom">
+									<div class="product-card__price-group">
+										<div class="product-card__old-price">
+											33,95
+										</div>
+										<div class="product-card__price">
+											9,99 <sub>/ m²</sub>
+										</div>
+									</div>
+									<table class="product-card__properties">
+										<tr>
+											<td>Zachtheid</td>
+											<td>
+												<div class="properties-lines" data-value="4">
+													<div></div>
+													<div></div>
+													<div></div>
+													<div></div>
+													<div></div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Echtheid</td>
+											<td>
+												<div class="properties-lines" data-value="3">
+													<div></div>
+													<div></div>
+													<div></div>
+													<div></div>
+													<div></div>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="promo-header__row-2">
+				<div class="container">
+					<div class="row justify-content-center justify-content-xl-between gx-5">
+						<div class="col-12 col-md-6 col-lg-4 ">
+							<div class="promo-header__advantage">
+								<div class="promo-header__advantage-icon">
+									<img src="img/icons/advantage-icon-1.svg" alt="">
+								</div>
+								<div class="promo-header__advantage-text-wrap">
+									<div class="promo-header__advantage-title">Rechtstreeks uit de fabriek</div>
+									<div class="promo-header__advantage-text">Daardoor de beste prijs/kwaliteit</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4 ">
+							<div class="promo-header__advantage">
+								<div class="promo-header__advantage-icon">
+									<img src="img/icons/advantage-icon-2.svg" alt="">
+								</div>
+								<div class="promo-header__advantage-text-wrap">
+									<div class="promo-header__advantage-title">Grote voorraden</div>
+									<div class="promo-header__advantage-text">Voor 12:00 besteld, dezelfde dag verstuurd
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4 ">
+							<div class="promo-header__advantage">
+								<div class="promo-header__advantage-icon">
+									<img src="img/icons/advantage-icon-3.svg" alt="">
+								</div>
+								<div class="promo-header__advantage-text-wrap">
+									<div class="promo-header__advantage-title">Doe het zelf</div>
+									<div class="promo-header__advantage-text">Zeer makkelijk zelf te installeren/leggen
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="categories">
+			<div class="container">
+				<h2 class="categories__title title-2 text-center title-space">
+					Kunstgras Categorieën
+				</h2>
+				<ul class="categories__list row gx-4 gx-md-5">
+					<li class="col-6 col-md-3">
+						<a href="#" class="category-card">
+							<div class="category-card__img ibg">
+								<img src="img/photo/category-img-1.jpg" alt="">
+							</div>
+							<div class="category-card__title with-chevron">
+								Tuin
+							</div>	
+						</a>
+					</li>
+					<li class="col-6 col-md-3">
+						<a href="#" class="category-card">
+							<div class="category-card__img ibg">
+								<img src="img/photo/category-img-2.jpg" alt="">
+							</div>
+							<div class="category-card__title with-chevron">
+								Balkon
+							</div>	
+						</a>
+					</li>
+					<li class="col-6 col-md-3">
+						<a href="#" class="category-card">
+							<div class="category-card__img ibg">
+								<img src="img/photo/category-img-3.jpg" alt="">
+							</div>
+							<div class="category-card__title with-chevron">
+								Sporten
+							</div>	
+						</a>
+					</li>
+					<li class="col-6 col-md-3">
+						<a href="#" class="category-card">
+							<div class="category-card__img ibg">
+								<img src="img/photo/category-img-4.jpg" alt="">
+							</div>
+							<div class="category-card__title with-chevron">
+								Spelen
+							</div>	
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="products">
+			<div class="container">
+				<h2 class="products__title title-2 text-center title-space">
+					Aanbevolen kunstgras
+				</h2>
+				<ul class="products__list row gx-5">
+					<li class="col-12 col-md-6 col-lg-4">
+						<a href="#" class="product-card small">
+							<div class="product-card__img">
+								<div class="product-card__label-group">
+									<div class="product-card__label label" style="background-color: #EBB11E;">Actie
+										- 21%
+									</div>
+									<div class="product-card__label label" style="background-color: #2E3428;">
+										Meest gekozen
+									</div>
+								</div>
+								<img src="img/photo/product-big-img-1.png" alt="">
+							</div>
+							<div class="product-card__title title-3">Ocean New</div>
+							<div class="product-card__status">
+								<span style="background-color: #72AF3A;"></span>
+								Direct leverbaar
+							</div>
+							<div class="product-card__bottom">
+								<div class="product-card__price-group">
+									<div class="product-card__old-price">
+										33,95
+									</div>
+									<div class="product-card__price">
+										24,99 <sub>/ m²</sub>
+									</div>
+								</div>
+								<table class="product-card__properties">
+									<tr>
+										<td>Zachtheid</td>
+										<td>
+											<div class="properties-lines" data-value="4">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Echtheid</td>
+										<td>
+											<div class="properties-lines" data-value="3">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</a>
+					</li>
+					<li class="col-12 col-md-6 col-lg-4">
+						<a href="#" class="product-card small">
+							<div class="product-card__img">
+								<div class="product-card__label-group">
+								</div>
+								<img src="img/photo/product-img-2.png" alt="">
+							</div>
+							<div class="product-card__title title-3">Spela | Grijs</div>
+							<div class="product-card__status">
+								<span style="background-color: #72AF3A;"></span>
+								Direct leverbaar
+							</div>
+							<div class="product-card__bottom">
+								<div class="product-card__price-group">
+									<div class="product-card__old-price">
+										19,95
+									</div>
+									<div class="product-card__price">
+										12,99 <sub>/ m²</sub>
+									</div>
+								</div>
+								<table class="product-card__properties">
+									<tr>
+										<td>Zachtheid</td>
+										<td>
+											<div class="properties-lines" data-value="4">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Echtheid</td>
+										<td>
+											<div class="properties-lines" data-value="3">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</a>
+					</li>
+					<li class="col-12 col-md-6 col-lg-4">
+						<a href="#" class="product-card small">
+							<div class="product-card__img">
+								<div class="product-card__label-group">
+									<div class="product-card__label label" style="background-color: #EBB11E;">Actie
+										- 21%</div>
+								</div>
+								<img src="img/photo/product-img-3.png" alt="">
+							</div>
+							<div class="product-card__title title-3">Spela | Geel</div>
+							<div class="product-card__status">
+								<span style="background-color: #72AF3A;"></span>
+								Direct leverbaar
+							</div>
+							<div class="product-card__bottom">
+								<div class="product-card__price-group">
+									<div class="product-card__old-price">
+										23,95
+									</div>
+									<div class="product-card__price">
+										19,99 <sub>/ m²</sub>
+									</div>
+								</div>
+								<table class="product-card__properties">
+									<tr>
+										<td>Zachtheid</td>
+										<td>
+											<div class="properties-lines" data-value="4">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Echtheid</td>
+										<td>
+											<div class="properties-lines" data-value="3">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<div class="products__bottom d-flex justify-content-center">
+					<a href="#" class="btn-default with-chevron">Bekijk alle producten</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="info-bun">
+			<div class="info-bun__img ibg">
+				<img src="img/photo/info-bun-img.jpg" alt="">
+			</div>
+			<div class="info-bun__body container">
+				<h2 class="info-bun__title title-2">Hulp nodig met kiezen?</h2>
+				<div class="info-bun__text text-content">
+					Voor ons is het belangrijkste dat jij gemakkelijk en snel tot de juiste keuze komt. Weet je nog niet zo goed op welke manieren onze kunstgrassoorten van elkaar verschillen en welke het beste bij jou past? Maak dan gebruik van onze keuzehulp. Zo zet je makkelijk een stap dichterbij prachtig kunstgras!
+				</div>
+				<div class="info-bun__steps">
+					<div class="info-bun__step">
+						<span>1</span>
+						Locatie
+					</div>
+					<div class="info-bun__step">
+						<span>2</span>
+						Gebruik
+					</div>
+					<div class="info-bun__step">
+						<span>3</span>
+						Realisme
+					</div>
+					<div class="info-bun__step">
+						<span>4</span>
+						Zachtheid
+					</div>
+				</div>
+				<a href="#" class="btn-default white with-chevron">
+					Naar de keuzehulp
+				</a>
+			</div>
+		</section>
+
+		<section class="articles">
+			<div class="container">
+				<h2 class="articles__title title-2 title-space">
+					Inspiratie nodig?
+				</h2>
+				<ul class="articles__list row  gx-5">
+					<li class="col-12 col-md-6 col-lg-4">
+						<a href="#" class="article-card">
+							<div class="article-card__img ibg">
+								<img src="img/photo/article-card-img-1.jpg" alt="">
+							</div>
+							<div class="article-card__text-wrap">
+								<div class="article-card__title title-4">Zwolle</div>
+								<div class="article-card__text text-content">
+									Een prachtig project in Zwolle (februari 2021). In deze tuin is er gekozen voor een hoog premium LimeGreen® gras van 50mm met LimeFill. Wil je meer zien?
+								</div>
+								<span class="link with-chevron">Bekijk deze tuin</span>
+							</div>
+						</a>
+					</li>
+					<li class="col-12 col-md-6 col-lg-4">
+						<a href="#" class="article-card">
+							<div class="article-card__img ibg">
+								<img src="img/photo/article-card-img-2.jpg" alt="">
+							</div>
+							<div class="article-card__text-wrap">
+								<div class="article-card__title title-4">Losser</div>
+								<div class="article-card__text text-content">
+									In Losser kunnen ze zorgeloos genieten van hun nieuwe LimeGreen® gras! Hier is gekozen voor 40mm hoog gras met LimeFill® voor een natuurlijke uitstraling.
+								</div>
+								<span class="link with-chevron">Bekijk deze tuin</span>
+							</div>
+						</a>
+					</li>
+					<li class="col-12 col-md-6 col-lg-4">
+						<a href="#" class="article-card">
+							<div class="article-card__img ibg">
+								<img src="img/photo/article-card-img-3.jpg" alt="">
+							</div>
+							<div class="article-card__text-wrap">
+								<div class="article-card__title title-4">Sommelsdijk</div>
+								<div class="article-card__text text-content">
+									Een oase van rust, natuur en groen. Prachtig afgewerkt met de Papilio 50mm inclusief LimeFill®. Een hoog en vol gazon voor een luxe uitstraling.
+								</div>
+								<span class="link with-chevron">Bekijk deze tuin</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="advantages">
+			<div class="container">
+				<div class="advantages__list gx-5 row justify-content-center text-center">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="advantages__icon">
+							<img src="img/icons/advantage-icon-1.svg" alt="">
+						</div>
+						<div class="advantages__title title-4">
+							Rechtstreeks uit de fabriek
+						</div>
+						<div class="advantages__text">
+							Daardoor de beste prijs/kwaliteit
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="advantages__icon">
+							<img src="img/icons/advantage-icon-2.svg" alt="">
+						</div>
+						<div class="advantages__title title-4">
+							Grote voorraden
+						</div>
+						<div class="advantages__text">
+							Voor 12:00 besteld, dezelfde dag verstuurd 
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="advantages__icon">
+							<img src="img/icons/advantage-icon-3.svg" alt="">
+						</div>
+						<div class="advantages__title title-4">
+							Doe het zelf
+						</div>
+						<div class="advantages__text">
+							Zeer makkelijk zelf te installeren/leggen
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="faq bg">
+			<div class="container">
+				<h2 class="faq__title title-2 text-center">Veelgestelde Vragen</h2>
+				<ul class="faq__list _spollers">
+					<li>
+						<div class="faq__list-title title-4 _spoller">
+							<span class="plus"></span>
+							Kunstgras kopen? Makkelijk online bestellen!
+						</div>
+						<div class="faq__list-content text-content">
+							Niet alleen voor in de voortuin of achtertuin, want kunstgras kan op allerlei plekken zorgen voor een geweldig resultaat. Veel van onze producten zijn namelijk geschikt als grastapijt voor op het balkon, zodat je ook kan genieten van mooi groen in stedelijkere omgevingen. Kijk op onze <a href="#">balkonkunstgras</a> pagina om te zien welke soort grastapijt het beste past op jouw balkon of dakterras. Ook beschikken we over verschillende soorten kunstgras die speciaal zijn gemaakt om op te sporten. Zo is <a href="#">kunstgras voor hockey</a> ontzettend populair, maar hebben we ook specifieke soorten kunstgras voor tennis en golf. Ook zijn de meesten wel bekend met het  Voor velden waar meerdere sporten op gespeeld worden gelden er zeer specifieke eisen. Daarvoor hebben wij Multisport kunstgras, wat extra robuust is en intensief gebruikt kan worden.
+						</div>
+					</li>
+					<li>
+						<div class="faq__list-title title-4 _spoller">
+							<span class="plus"></span>
+							Kunstgras voor alle toepassingen
+						</div>
+						<div class="faq__list-content text-content">
+							Niet alleen voor in de voortuin of achtertuin, want kunstgras kan op allerlei plekken zorgen voor een geweldig resultaat. Veel van onze producten zijn namelijk geschikt als grastapijt voor op het balkon, zodat je ook kan genieten van mooi groen in stedelijkere omgevingen. Kijk op onze <a href="#">balkonkunstgras</a> pagina om te zien welke soort grastapijt het beste past op jouw balkon of dakterras. Ook beschikken we over verschillende soorten kunstgras die speciaal zijn gemaakt om op te sporten. Zo is <a href="#">kunstgras voor hockey</a> ontzettend populair, maar hebben we ook specifieke soorten kunstgras voor tennis en golf. Ook zijn de meesten wel bekend met het <a href="#">kunstgras voor voetbalvelden.</a> Voor velden waar meerdere sporten op gespeeld worden gelden er zeer specifieke eisen. Daarvoor hebben wij Multisport kunstgras, wat extra robuust is en intensief gebruikt kan worden.
+						</div>
+					</li>
+					<li>
+						<div class="faq__list-title title-4 _spoller">
+							<span class="plus"></span>
+							Grastapijt op ieder formaat
+						</div>
+						<div class="faq__list-content text-content">
+							Niet alleen voor in de voortuin of achtertuin, want kunstgras kan op allerlei plekken zorgen voor een geweldig resultaat. Veel van onze producten zijn namelijk geschikt als grastapijt voor op het balkon, zodat je ook kan genieten van mooi groen in stedelijkere omgevingen. Kijk op onze <a href="#">balkonkunstgras</a> pagina om te zien welke soort grastapijt het beste past op jouw balkon of dakterras. Ook beschikken we over verschillende soorten kunstgras die speciaal zijn gemaakt om op te sporten. Zo is <a href="#">kunstgras voor hockey</a> ontzettend populair, maar hebben we ook specifieke soorten kunstgras voor tennis en golf. Ook zijn de meesten wel bekend met het  Voor velden waar meerdere sporten op gespeeld worden gelden er zeer specifieke eisen. Daarvoor hebben wij Multisport kunstgras, wat extra robuust is en intensief gebruikt kan worden.
+						</div>
+					</li>
+					<li>
+						<div class="faq__list-title title-4 _spoller">
+							<span class="plus"></span>
+							Waarom kunstgras?
+						</div>
+						<div class="faq__list-content text-content">
+							Niet alleen voor in de voortuin of achtertuin, want kunstgras kan op allerlei plekken zorgen voor een geweldig resultaat. Veel van onze producten zijn namelijk geschikt als grastapijt voor op het balkon, zodat je ook kan genieten van mooi groen in stedelijkere omgevingen. Kijk op onze <a href="#">balkonkunstgras</a> pagina om te zien welke soort grastapijt het beste past op jouw balkon of dakterras. Ook beschikken we over verschillende soorten kunstgras die speciaal zijn gemaakt om op te sporten. Zo is <a href="#">kunstgras voor hockey</a> ontzettend populair, maar hebben we ook specifieke soorten kunstgras voor tennis en golf. Ook zijn de meesten wel bekend met het <a href="#">kunstgras voor voetbalvelden.</a> Voor velden waar meerdere sporten op gespeeld worden gelden er zeer specifieke eisen. Daarvoor hebben wij Multisport kunstgras, wat extra robuust is en intensief gebruikt kan worden.
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="articles">
+			<div class="container">
+				<h2 class="articles__title title-2 title-space">
+					Kunstgras tips & tricks
+				</h2>
+				<ul class="articles__list row  gx-5">
+					<li class="col-12 col-md-6 col-lg-4">
+						<a href="#" class="article-card">
+							<div class="article-card__img ibg">
+								<img src="img/photo/article-card-img-4.jpg" alt="">
+							</div>
+							<div class="article-card__text-wrap">
+								<div class="article-card__title title-4">
+									Waarom kiezen voor kunstgras?
+								</div>
+								<div class="article-card__text text-content">
+									In tegenstelling tot natuurgras vergt kunstgras minimaal onderhoud. Kunstgras hoeft namelijk niet gemaaid, geverticuteerd, gesproeid of bemest te worden.
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="col-12 col-md-6 col-lg-4">
+						<a href="#" class="article-card">
+							<div class="article-card__img ibg">
+								<img src="img/photo/article-card-img-2.jpg" alt="">
+							</div>
+							<div class="article-card__text-wrap">
+								<div class="article-card__title title-4">
+									Het onderhouden van kunstgras
+								</div>
+								<div class="article-card__text text-content">
+									In vergelijking met natuurgras is het onderhoud van een kunstgrasmat gelukkig te verwaarlozen. Het is wel aan te raden om viezigheid met regelmaat te verwijderen.
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="col-12 col-md-6 col-lg-4">
+						<a href="#" class="article-card">
+							<div class="article-card__img ibg">
+								<img src="img/photo/article-card-img-3.jpg" alt="">
+							</div>
+							<div class="article-card__text-wrap">
+								<div class="article-card__title title-4">
+									Een zwembad zetten op kunstgras: Zo doe je dat!
+								</div>
+								<div class="article-card__text text-content">
+									Het is bekend dat zwembaden bij natuurgras zorgen dat er niet veel van het gazon over blijft.
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="trustpilot">
+			<div class="trustpilot__body container">
+				<div>De Kunstgras Fabriek</div>
+				<div class="rating">
+                    <div class="rating__stars" data-value="4.6">
+                        <span class="rating__progress"></span>
+                        <div class="rating__star">
+                            <img src="img/icons/star.svg" alt="">
+                        </div>
+                        <div class="rating__star">
+                            <img src="img/icons/star.svg" alt="">
+                        </div>
+                        <div class="rating__star">
+                            <img src="img/icons/star.svg" alt="">
+                        </div>
+                        <div class="rating__star">
+                            <img src="img/icons/star.svg" alt="">
+                        </div>
+                        <div class="rating__star">
+                            <img src="img/icons/star.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+				<div><strong>Uitstekend</strong></div>
+				<div>Gebaseerd op <span>548 reviews</span></div>
+				<div class="trustpilot__logo">
+					<a href="#">
+						<img src="img/logo/trustpilot-logo.svg" alt="">
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- == FOOTER ================== -->
+	
+	<!-- == // FOOTER ================== -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/jQueryScripts.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+
+</body>
+
+</html>
