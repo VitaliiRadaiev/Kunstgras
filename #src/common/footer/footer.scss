@@ -1,0 +1,221 @@
+.footer {
+    color: $textLightColor;
+    &__row-1 {
+        background-color: $textColor;
+        padding-top: 70px;
+        padding-bottom: 87px;
+
+        @media (max-width: $md3+px) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+
+    &__logo {
+        width: 100%;
+        max-width: 325px;
+        margin-right: 20px;
+        margin-bottom: 70px;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 40px;
+        }
+
+        & img,
+        & svg {
+            width: 100%;
+            height: auto;
+        }
+        & .logo-text {
+            fill: #fff;
+        }
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__col {
+        flex: 1 1 auto;
+        margin-bottom: 133px;
+        &:not(:last-child) {
+            padding-right: 20px;
+        }
+
+        @media (max-width: $md2+px) {
+            flex: 0 1 50%;
+            margin-bottom: 80px;
+        }
+
+        @media (max-width: 575.98px) {
+            flex: 0 1 100%;
+            margin-bottom: 50px;
+        }
+
+    }
+
+    &__col-1 {
+
+        @media (min-width: 992px) {
+            max-width: 256px;
+        }
+    }
+
+    &__col-2 {
+        @media (min-width: 992px) {
+            max-width: 328px;
+        }
+    }
+
+    &__col-3 {
+        @media (min-width: 992px) {
+            max-width: 311px;
+        }
+    }
+
+    &__col-4 {
+        @media (min-width: 992px) {
+            max-width: 305px;
+            text-align: right;
+        }
+
+        & .mb-5 {
+            margin-bottom: 4rem !important;
+        }
+    }
+
+    &__title {
+        display: block;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 144%;
+        margin-bottom: 25px;
+        transition: all 0.3s ease;
+        color: $textLightColor;
+
+        @media (min-width: 992px) {
+            &:hover {
+                color: $mainColor;
+            }
+        }
+    }
+
+    &__list {
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0.02em;
+        & > li {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__link {
+        color: $textLightColor;
+        transition: all 0.3s ease;
+
+        @media (min-width: 992px) {
+            &:hover {
+                color: $mainColor;
+            }
+        }
+    }
+
+    &__bottom {
+
+
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-end;
+        }
+    }
+
+    &__form {
+        margin-bottom: 30px;
+        max-width: 535px;
+        flex: 1 1 auto;
+        
+        @media (min-width: 768px) {
+            margin-right: 20px;
+        }
+
+        & h5 {
+            margin-bottom: 30px;
+        }
+
+        @media (min-width: 480px) {
+            & .default-field {
+                & .input {
+                    height: 60px;
+                    font-size: 18px;
+                    line-height: 21px;
+                    letter-spacing: 0.01em;
+                    padding: 10px 25px;
+                }
+    
+                & .btn-default {
+                    min-height: 60px;
+                    width: 140px;
+                    font-size: 18px;
+                    line-height: 21px;
+                }
+            }
+        }
+
+    }
+
+    &__social {
+        
+        @media (min-width: 768px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__row-2 {
+        background: #f9f9f9;
+    }
+
+    &__copy {
+        display: flex;
+        align-items: center;
+        min-height: 89px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 16px;
+        line-height: 18px;
+        flex-wrap: wrap;
+        color: $textColor;
+
+        @media (max-width: $md3+px) {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        & > * {
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            &:not(:last-child) {
+                @media (min-width: 768px) {
+                    margin-right: 43px;
+                }
+            }
+        }
+
+        & a {
+            color: $textColor;
+
+            @media (min-width: 992px) {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
