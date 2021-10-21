@@ -27,9 +27,11 @@ window.addEventListener('load', function () {
 	// ==== AND ADD PADDING-TOP ================================
 
 	@@include('_function.js');
+	@@include('forms.js');
 	@@include('../common/header/header.js');
 	@@include('../common/rating/rating.js');
-
+	
+	@@include('pages/catalog.js');
 });
 
 window.addEventListener('DOMContentLoaded', function () {

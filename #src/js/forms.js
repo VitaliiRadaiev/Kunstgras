@@ -367,17 +367,17 @@ function inputs_init(inputs) {
 			// 			}
 			// 		}).mask(input);
 			// 	}
-			// 	if (input.classList.contains('_digital')) {
-			// 		input.classList.add('_mask');
-			// 		Inputmask("9{1,}", {
-			// 			"placeholder": '',
-			// 			clearIncomplete: true,
-			// 			clearMaskOnLostFocus: true,
-			// 			onincomplete: function () {
-			// 				input_clear_mask(input, input_g_value);
-			// 			}
-			// 		}).mask(input);
-			// 	}
+				if (input.classList.contains('_digital')) {
+					input.classList.add('_mask');
+					Inputmask("9{1,}", {
+						"placeholder": '',
+						clearIncomplete: true,
+						clearMaskOnLostFocus: true,
+						onincomplete: function () {
+							input_clear_mask(input, input_g_value);
+						}
+					}).mask(input);
+				}
 			// 	form_remove_error(input);
 			// });
 			// input.addEventListener('blur', function (e) {

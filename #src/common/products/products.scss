@@ -11,18 +11,24 @@
 
     &__list {
         margin-bottom: 25px;
-        @media (min-width: 992px) {
-            margin-left: -22.5px;
-            margin-right: -22.5px;
+
+        &.gx-lg-6 {
+            @media (min-width: 992px) {
+                margin-left: -22.5px;
+                margin-right: -22.5px;
+            }
+
+            & > li {
+                @media (min-width: 992px) {
+                    margin-bottom: 45px;
+                    padding-left: 22.5px;
+                    padding-right: 22.5px;
+                }
+            }
         }
+
         & > li {
             margin-bottom: 30px;
-
-            @media (min-width: 992px) {
-                margin-bottom: 45px;
-                padding-left: 22.5px;
-                padding-right: 22.5px;
-            }
         }
     }
 

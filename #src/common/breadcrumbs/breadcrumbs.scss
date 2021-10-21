@@ -1,0 +1,55 @@
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 0;
+}
+.breadcrumb-item {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: $textColor;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    & +.breadcrumb-item {
+        padding-left: 0;
+    }
+
+    &::before {
+        display: none;
+    }
+
+    & > a {
+        display: inline-block;
+        font-weight: 400;
+        color: $textColor;
+        position: relative;
+        padding-right: 0.9374em;
+        transition: all .3s ease;
+    
+        &:after {
+            position: absolute;
+            font-family: $fontAwesome;
+            content: "\f105";
+            top: 50%;
+            right: 0;
+            font-weight: 900;
+            color: #B2B6AE;
+            transform: translateY(-50%);
+            transition: all .3s ease;
+        }
+
+        @media (min-width: 992px) {
+            &:hover {
+                color: $mainColor;
+            }
+        }
+    }
+}
+

@@ -280,6 +280,13 @@ textarea {
 		background-color: $textLightColor;
 		color: $textColor;
 	}
+
+	& img {
+		width: 24px;
+		margin-right: 20px;
+		height: auto;
+		flex: 0 0 auto;
+	}
 }
 
 button.btn-default {
@@ -287,6 +294,10 @@ button.btn-default {
 
 .bg {
 	background: #f9f9f9;
+}
+
+.bg-gradient {
+	background: linear-gradient(180deg, #ffffff 11.1%, rgba(255, 255, 255, 0) 27.27%), #f9f9f9;
 }
 
 .social {
@@ -308,14 +319,15 @@ button.btn-default {
 			height: 24px;
 			width: auto;
 
-			& img, & svg {
+			& img,
+			& svg {
 				max-width: 100%;
 				max-height: 100%;
 				width: auto;
 				height: auto;
 
 				& path {
-					transition: all .3s ease;
+					transition: all 0.3s ease;
 				}
 			}
 
@@ -328,7 +340,6 @@ button.btn-default {
 					}
 				}
 			}
-
 		}
 	}
 }
@@ -336,6 +347,12 @@ button.btn-default {
 // === and btn ========================================================================
 
 .input {
+	background: #ffffff;
+	border: 1px solid #d9e3cf;
+	border-radius: 5px;
+	height: 45px;
+	width: 100%;
+	padding: 8px 15px;
 }
 
 .textarea {
@@ -369,15 +386,32 @@ button.btn-default {
 	& h3 {
 	}
 	& h4 {
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 120%;
+		letter-spacing: -0.02em;
+
+		@media (max-width: $md4+px) {
+			font-size: 26px;
+		}
+		margin-bottom: 0.4em;
 	}
 
 	& h5 {
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 133%;
+		margin-bottom: 0.3em;
 	}
 	& h6 {
 	}
 
 	& p {
-		margin-bottom: 1.6em;
+		margin-bottom: 0.8em;
+
+		& ~ h4 {
+			margin-top: 25px;
+		}
 	}
 
 	& ul {
@@ -414,6 +448,11 @@ button.btn-default {
 			}
 		}
 	}
+
+	& table {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
 }
 
 // === and TEXT CONTETN BLOCK ========================================================================
@@ -430,8 +469,12 @@ button.btn-default {
 @import "../common/advantages/advantages";
 @import "../common/faq/faq";
 @import "../common/trustpilot/trustpilot";
+@import "../common/breadcrumbs/breadcrumbs";
+@import "../common/pagination/pagging";
 // ==== BLOCKS =====================================================
 
 // ==== PAGES =====================================================
 @import "pages/home";
+@import "pages/catalog";
+@import "pages/product-detail";
 // ==== AND PAGES =====================================================
