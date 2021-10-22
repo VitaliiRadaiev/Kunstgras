@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "Kunstgras"
+})
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+    @@include('common/header/_header.html',{
+    "white": '',
+    })
+    <!-- == // TOP LINE ================== -->
+
+    <main class="_page contact-page _padding-top">
+        <nav class="bg" aria-label="breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item" aria-current="page">Contacteer ons</li>
+                </ol>
+            </div>
+        </nav>
+
+        <section class="text-img-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="text-img-block__wrap">
+                            <h2 class="text-img-block__title title-2">
+                                Contacteer ons
+                            </h2>
+                            <div class="text-img-block__text text-content">
+                                De Kunstgras Fabriek is gevestigd in Genemuiden en Temse. Wij staan u graag te woord bij al uw vragen over kunstgras. Genemuiden is gelegen nabij Zwolle. In Temse hebben we helaas geen magazijn en is er geen mogelijkheid voor afhaal van het kunstgras.
+                            </div>
+                            <ul class="contact__list">
+                                <li>
+                                    <span>
+                                        <img src="img/icons/contact-icon-1.svg" alt="">
+                                    </span>
+                                    Straatnaam 12, 1010 AB Plaatsnaam
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="img/icons/contact-icon-2.svg" alt="">
+                                    </span>
+                                    <a href="#">012 - 345 67 89 </a>
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="img/icons/contact-icon-3.svg" alt="">
+                                    </span>
+                                    <a href="#">info@dekunstgrasfabriek.nl</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="contact__map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2319.1209362395994!2d-110.17715604786942!3d54.46080198013064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a7cb9e1a8a6f01%3A0x4edd9c8aa5b5fdb9!2zMTAxMCAxMiBBdmUsIENvbGQgTGFrZSwgQUIgVDlNIDFKNCwg0JrQsNC90LDQtNCw!5e0!3m2!1sru!2sua!4v1634891515145!5m2!1snd!2sen" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <form action="#" class="contact-form bg">
+            <div class="container contact-form__body">
+                <h3 class="contact-form__title title-3">
+                    Stuur ons een bericht
+                </h3>
+                <div class="contact-form__items">
+                    <div class="contact-form__item">
+                        <div class="contact-form__label">Naam <span>*</span></div>
+                        <input type="text" class="input" placeholder="" required >
+                    </div>
+                    <div class="contact-form__item">
+                        <div class="contact-form__label">E-mailadres <span>*</span></div>
+                        <input type="email" class="input" placeholder="" required>
+                    </div>
+                    <div class="contact-form__item width-100">
+                        <div class="contact-form__label">Waar kunnen we je mee helpen? <span>*</span></div>
+                        <textarea placeholder="" class="textarea" required></textarea>
+                    </div>
+                </div>
+                <button class="btn-default">Versturen</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- == FOOTER ================== -->
+    @@include('common/footer/_footer.html',{})
+    <!-- == // FOOTER ================== -->
+
+    @@include('_js-bottom.html',{})
+</body>
+
+</html>

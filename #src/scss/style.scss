@@ -357,6 +357,16 @@ button.btn-default {
 }
 
 .textarea {
+	background: #ffffff;
+	border: 1px solid #d9e3cf;
+	border-radius: 5px;
+	height: 150px;
+	width: 100%;
+	padding: 20px;
+	font-size: 16px;
+	line-height: 18px;
+	color: #22251f;
+	resize: none;
 }
 
 .link {
@@ -378,7 +388,7 @@ button.btn-default {
 // === TEXT CONTETN BLOCK ========================================================================
 .text-content {
 	font-size: 16px;
-	line-height: 162%;
+	line-height: 163%;
 
 	& h1 {
 	}
@@ -478,4 +488,6 @@ button.btn-default {
 @import "pages/home";
 @import "pages/catalog";
 @import "pages/product-detail";
+@import "pages/about";
+@import "pages/contact";
 // ==== AND PAGES =====================================================
