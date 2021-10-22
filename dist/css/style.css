@@ -923,6 +923,10 @@ textarea {
       align-self: flex-start;
 }
 
+.btn-default.with-chevron {
+  padding: 12px 27px;
+}
+
 .btn-default.with-chevron:after {
   position: static;
   margin-left: 6px;
@@ -2726,7 +2730,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3px 3px;
+  padding: 4px 3px 3px 3px;
   font-weight: bold;
   font-size: 21px;
   line-height: 1em;
@@ -3900,6 +3904,10 @@ textarea {
     margin-bottom: 30px;
   }
 
+  .promo-header {
+    padding-top: 30px;
+  }
+
   .info-bun__body {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -4046,6 +4054,11 @@ textarea {
 }
 
 @media (max-width: 479.98px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .title-4 {
     font-size: 26px;
   }
@@ -4136,12 +4149,5 @@ textarea {
 
   .product-detail-form__checkbox-item-label {
     font-size: 16px;
-  }
-}
-
-@media (max-width: 374.98px) {
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }

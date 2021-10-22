@@ -1,5 +1,10 @@
 .promo-header {
     padding-top: 50px;
+
+    @media (max-width: $md3+px) {
+        padding-top: 30px;
+    }
+
     &__row-1 {
         padding-bottom: 90px;
 
@@ -212,7 +217,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 3px 3px;
+            padding: 4px 3px 3px 3px;
             font-weight: bold;
             font-size: 21px;
             line-height: 1em;
